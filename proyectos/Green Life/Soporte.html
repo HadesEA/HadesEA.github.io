@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadatos básicos -->
+  <meta charset="UTF-8"> <!-- Codificación UTF-8 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con navegadores antiguos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño adaptable a dispositivos móviles -->
+
+  <!-- Favicon de la página -->
+  <link rel="icon" type="image/x-icon" href="imgs/GreenLife-removebg-preview.png"/>
+
+  <!-- Estilos e iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Framework CSS W3.CSS -->
+  <link rel="stylesheet" href="csss/w3.css"> <!-- Estilos locales adicionales -->
+
+  <!-- Título de la pestaña del navegador -->
+  <title>Green Life</title>
+
+  <!-- Estilos específicos de la página de soporte -->
+  <link rel="stylesheet" href="csss/Soporte.css" />
+</head>
+<body>
+  <!-- Contenedor principal -->
+  <div id="container">
+    <!-- Encabezado con barra de navegación -->
+    <header id="top">
+      <aside>
+        <div>
+          <!-- Título del sitio -->
+          <h1 id="h1">
+            <p id="p1">
+              <span style="color: rgb(10,180,60)">G</span>reen 
+              <span style="color: rgb(10,180,60)">L</span>ife
+            </p>
+            <!-- Menú colapsable para diseño responsivo -->
+            <input type="checkbox" id="check"> <!-- Checkbox para habilitar el menú -->
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i> <!-- Icono de menú -->
+            </label>
+            <!-- Lista de navegación -->
+            <ul>
+              <li><a href="Index.html" class="w3-button">Inicio</a></li>
+              <li><a href="Producto.html" class="w3-button">Productos</a></li>
+              <li><a href="Beneficios.html" class="w3-button">Beneficios</a></li>
+              <li>
+                <!-- Submenú de categorías de cultivos -->
+                <a href="#" class="w3-button submenu-toggle submenu">Cultivos</a>
+                <ul class="submenu">
+                  <li><a class="subcategoria" href="cultivos/Hortalizas.html">Hortalizas</a></li>
+                  <li><a class="subcategoria" href="cultivos/Frutas.html">Frutas</a></li>
+                  <li><a class="subcategoria" href="cultivos/Cereales.html">Cereales</a></li>
+                  <li><a class="subcategoria" href="cultivos/Flores.html">Flores</a></li>
+                </ul>
+              </li>
+              <li><a href="Soporte.html" class="active w3-button">Soporte</a></li>
+            </ul>
+          </h1>
+        </div>
+      </aside>
+    </header>
+  </div>
+
+  <!-- Contenido principal -->
+  <section id="contenido">
+    <!-- Sección de preguntas frecuentes -->
+    <div class="Manual"></div>
+    <div class="Preguntas frecuentes">
+      <div class="encabezado">
+        <!-- Encabezado de la sección -->
+        <img src="imgs/logoOficial.png" alt="">
+        <h2><strong>Preguntas Frecuentes</strong></h2>
+      </div>
+      <div class="preg-frec">
+        <ul>
+          <!-- Categorías de preguntas -->
+          <li><h3><strong>Instalación y configuración</strong></h3></li>
+          <ol>
+            <!-- Preguntas detalladas con descripción -->
+            <details>
+              <summary>¿Cómo instalo y configuro los sensores de condiciones del suelo?</summary>
+              <p>Instrucciones detalladas para la instalación y configuración de sensores.</p>
+            </details>
+            <details>
+              <summary>¿Cómo conecto los sensores a la aplicación?</summary>
+              <p>Pasos para conectar los sensores de forma automática a la aplicación.</p>
+            </details>
+            <details>
+              <summary>¿Qué requisitos de hardware y software se necesitan para instalar la aplicación de escritorio?</summary>
+              <p>Lista de requisitos mínimos de hardware y software para instalar la aplicación.</p>
+            </details>
+          </ol>
+
+          <!-- Repetir estructura para otras categorías -->
+          <li><h3><strong>Uso y operación</strong></h3></li>
+          <ol>
+            <details>
+              <summary>¿Cómo interpretar los datos de los sensores en la aplicación o plataforma web?</summary>
+              <p>Descripción de los indicadores y gráficos mostrados en la aplicación.</p>
+            </details>
+            <!-- Más preguntas aquí -->
+          </ol>
+
+          <!-- Agregar más categorías según sea necesario -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Formularios e iframes -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHq0dBXVddy5c2XNFiLGmeCIfJzwaWFuRaECJp9W-CX1iCjA/viewform?usp=sharing" frameborder="0" id="formulario">Cargando…</iframe>
+    <iframe src="imgs/Manual de usuario GreenLife.pdf" id="formulario"></iframe>
+  </section>
+</body>
+
+<!-- Pie de página -->
+<footer>
+  <div class="content">
+    <!-- Información de derechos de autor -->
+    <p>Copyright &copy; Greenlife | 2021</p>
+    <p><a href="mailto:monitorgreenlife@gmail.com" id="correo">Correo - Green Life</a></p>
+  </div>
+  <!-- Información del desarrollador -->
+  <p id="desarrollado">Desarrollado por: <a href="https://github.com/HadesEA" target="_blank">Escobedo Aguilera Adrian</a></p>
+</footer>
+</html>
